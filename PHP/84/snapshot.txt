@@ -1,7 +1,7 @@
 This snapshot was automatically generated on
-Tue, 17 Dec 2024 17:34:59 +0000
+Tue, 11 Feb 2025 16:29:51 +0000
 
-Version: 8.4.2
+Version: 8.4.4
 Branch: HEAD
 Build: D:\a\php-ftw\php-ftw\php\vs16\x64\obj\Release_TS
 
@@ -101,19 +101,19 @@ Module: php_sqlite3.dll
 
 Module: php_intl.dll
 ===========================
-	icuuc75.dll
 	icuin75.dll
 	icuio75.dll
-	vcruntime140_1.dll
-
-Module: icuuc75.dll
-===========================
-	icudt75.dll
+	icuuc75.dll
 	vcruntime140_1.dll
 
 Module: icuin75.dll
 ===========================
 	icuuc75.dll
+	vcruntime140_1.dll
+
+Module: icuuc75.dll
+===========================
+	icudt75.dll
 	vcruntime140_1.dll
 
 Module: icuio75.dll
