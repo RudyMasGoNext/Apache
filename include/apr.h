@@ -20,7 +20,7 @@
 
 /* GENERATED FILE WARNING!  DO NOT EDIT apr.h
  *
- * You must modify apr.hw instead.
+ * You must modify apr.hwc instead.
  *
  * And please, make an effort to stub apr.hnw and apr.h.in in the process.
  *
@@ -64,16 +64,6 @@
 #pragma warning(disable: 4100 4127 4163 4201 4514; once: 4057 4075 4244)
 #endif
 
-/* Ignore Microsoft's interpretation of secure development
- * and the POSIX string handling API
- */
-#if defined(_MSC_VER) && _MSC_VER >= 1400
-#ifndef _CRT_SECURE_NO_DEPRECATE
-#define _CRT_SECURE_NO_DEPRECATE
-#endif
-#pragma warning(disable: 4996)
-#endif
-
 /* Has windows.h already been included?  If so, our preferences don't matter,
  * but we will still need the winsock things no matter what was included.
  * If not, include a restricted set of windows headers to our tastes.
@@ -83,9 +73,6 @@
 #define WIN32_LEAN_AND_MEAN
 #endif
 #ifndef _WIN32_WINNT
-
-/* Restrict the server to a subset of Windows XP header files by default
- */
 #define _WIN32_WINNT 0x0600
 #endif
 #ifndef NOUSER
@@ -684,9 +671,6 @@ typedef  int         gid_t;
  */
 #if defined(_MSC_VER) && _MSC_VER >= 1200
 #pragma warning(pop)
-#if _MSC_VER >= 1400
-#pragma warning(disable: 4996)
-#endif
 #endif
 
 #endif /* WIN32 */
