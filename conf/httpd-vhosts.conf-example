@@ -26,107 +26,12 @@ DocumentRoot "C:/"
   </FilesMatch>
 </VirtualHost>
 
-# rudymas.be
+# example.com
 #
 <VirtualHost *:80>
   ServerName localhost
-    ServerAlias rudymas.localhost
-  VirtualDocumentRoot "C:/server/rudymas.be"
-  <Directory "C:/server/*">
-    AllowOverride All
-    Options Indexes FollowSymLinks
-    Require local
-  </Directory>
-  
-  <FilesMatch \.php$>
-	SetHandler fcgid-script
-	FCGIWrapper "C:/Apache/PHP/83/php-cgi.exe" .php
-	Options +ExecCGI
-  </FilesMatch>
-</VirtualHost>
-
-# guna
-#
-<VirtualHost *:80>
-  ServerName localhost
-    ServerAlias guna7.localhost
-  VirtualDocumentRoot "C:/server/guna"
-  <Directory "C:/server/*">
-    AllowOverride All
-    Options Indexes FollowSymLinks
-    Require local
-  </Directory>
-  
-  <FilesMatch \.php$>
-	SetHandler fcgid-script
-	FCGIWrapper "C:/Apache/PHP/74/php-cgi.exe" .php
-	Options +ExecCGI
-  </FilesMatch>
-</VirtualHost>
-
-# guna 8.3
-#
-<VirtualHost *:80>
-  ServerName localhost
-    ServerAlias guna.localhost
-  VirtualDocumentRoot "C:/server/guna8"
-  <Directory "C:/server/*">
-    AllowOverride All
-    Options Indexes FollowSymLinks
-    Require local
-  </Directory>
-  
-  <FilesMatch \.php$>
-	SetHandler fcgid-script
-	FCGIWrapper "C:/Apache/PHP/83/php-cgi.exe" .php
-	Options +ExecCGI
-  </FilesMatch>
-</VirtualHost>
-
-# OLSC
-#
-<VirtualHost *:80>
-  ServerName localhost
-    ServerAlias olsc7.localhost
-  VirtualDocumentRoot "C:/server/olcs"
-  <Directory "C:/server/*">
-    AllowOverride All
-    Options Indexes FollowSymLinks
-    Require local
-  </Directory>
-  
-  <FilesMatch \.php$>
-	SetHandler fcgid-script
-	FCGIWrapper "C:/Apache/PHP/74/php-cgi.exe" .php
-	Options +ExecCGI
-  </FilesMatch>
-</VirtualHost>
-
-# OLSC 8.3
-#
-<VirtualHost *:80>
-  ServerName localhost
-    ServerAlias olsc.localhost
-  VirtualDocumentRoot "C:/server/olcs8"
-  <Directory "C:/server/*">
-    AllowOverride All
-    Options Indexes FollowSymLinks
-    Require local
-  </Directory>
-  
-  <FilesMatch \.php$>
-	SetHandler fcgid-script
-	FCGIWrapper "C:/Apache/PHP/83/php-cgi.exe" .php
-	Options +ExecCGI
-  </FilesMatch>
-</VirtualHost>
-
-# Test
-#
-<VirtualHost *:80>
-  ServerName localhost
-    ServerAlias test.localhost
-  VirtualDocumentRoot "C:/server/test"
+    ServerAlias example.localhost
+  VirtualDocumentRoot "C:/server/example.com"
   <Directory "C:/server/*">
     AllowOverride All
     Options Indexes FollowSymLinks
